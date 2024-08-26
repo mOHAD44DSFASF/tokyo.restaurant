@@ -251,6 +251,35 @@
                 height: 200px;
             }
         }
+        /* حذف المسافات البيضاء الزائدة */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* إعادة تعيين الهوامش لعناصر الصفحة */
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* تعديل عرض الصور والعناصر لتتناسب مع الشاشة */
+img, .content {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* تخصيص القيم في حالة وجود عناصر معينة تحتاج لضبط إضافي */
+@media screen and (max-width: 767px) {
+    .specific-element {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
         /* Reset CSS */
     </style>
 </head>
